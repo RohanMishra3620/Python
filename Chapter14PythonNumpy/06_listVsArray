@@ -1,0 +1,15 @@
+import numpy as np
+import time
+
+lst = list(range(1000000))
+arr = np.arange(1000000)
+
+# List sum timing
+start = time.time()
+sum(lst)
+print("List time  :", time.time() - start)
+
+# NumPy sum timing
+start = time.time()
+np.sum(arr)
+print("NumPy time :", time.time() - start)
